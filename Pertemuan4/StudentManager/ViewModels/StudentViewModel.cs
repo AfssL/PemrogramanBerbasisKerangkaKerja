@@ -26,10 +26,14 @@ namespace StudentManager.ViewModels
             set { _searchText = value; OnPropertyChanged(); }
         }
 
-        // Properti Statistik Dashboard
+        // Properti Statistik Jurusan
         public int TotalStudents => Students.Count;
-        public int TotalInformatika => Students.Count(x => x.Jurusan == "Informatika");
+        public int TotalTeknikInformatika => Students.Count(x => x.Jurusan == "Teknik Informatika");
         public int TotalSistemInformasi => Students.Count(x => x.Jurusan == "Sistem Informasi");
+        public int TotalTeknikKomputer => Students.Count(x => x.Jurusan == "Teknik Komputer");
+        public int TotalTeknikBiomedikCount => Students.Count(x => x.Jurusan == "Teknik Biomedik");
+        public int TotalTeknikElektro => Students.Count(x => x.Jurusan == "Teknik Elektro");
+        public int TotalTeknologiInformasi => Students.Count(x => x.Jurusan == "Teknologi Informasi");
 
         public ICommand SaveCommand { get; }
         public ICommand DeleteCommand { get; }
@@ -90,8 +94,12 @@ namespace StudentManager.ViewModels
         private void RefreshStats()
         {
             OnPropertyChanged(nameof(TotalStudents));
-            OnPropertyChanged(nameof(TotalInformatika));
+            OnPropertyChanged(nameof(TotalTeknikInformatika));
             OnPropertyChanged(nameof(TotalSistemInformasi));
+            OnPropertyChanged(nameof(TotalTeknikKomputer));
+            OnPropertyChanged(nameof(TotalTeknikBiomedikCount));
+            OnPropertyChanged(nameof(TotalTeknikElektro));
+            OnPropertyChanged(nameof(TotalTeknologiInformasi));
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;
