@@ -1,0 +1,49 @@
+<Page x:Class="EventKu.SettingsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="SettingsPage" Background="#F8FAFC">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid Margin="35,25,35,35">
+            <StackPanel>
+                <TextBlock Text="⚙️ Pengaturan &amp; Informasi Aplikasi" FontSize="24" FontWeight="Bold" Foreground="#0F172A" Margin="0,0,0,5"/>
+                <TextBlock Text="Detail konfigurasi sistem, spesifikasi database, dan identitas pengembang." FontSize="13" Foreground="#64748B" Margin="0,0,0,25"/>
+
+                <Border Background="White" CornerRadius="12" Padding="28" Width="520" HorizontalAlignment="Left">
+                    <Border.Effect><DropShadowEffect BlurRadius="12" Direction="270" ShadowDepth="1" Color="#E2E8F0" Opacity="0.5"/></Border.Effect>
+                    <StackPanel>
+                        <TextBlock Text="Informasi Sistem &amp; Pengembang" FontSize="16" FontWeight="Bold" Foreground="#0F172A" Margin="0,0,0,15"/>
+                        <Separator Background="#E2E8F0" Margin="0,0,0,15"/>
+                        
+                        <DockPanel Margin="0,0,0,12">
+                            <TextBlock Text="Nama Aplikasi:" FontWeight="SemiBold" Foreground="#475569" Width="150"/>
+                            <TextBlock Text="EventKu (Sistem Informasi Agenda)" Foreground="#0F172A" FontWeight="Bold"/>
+                        </DockPanel>
+
+                        <DockPanel Margin="0,0,0,12">
+                            <TextBlock Text="Versi Sistem:" FontWeight="SemiBold" Foreground="#475569" Width="150"/>
+                            <TextBlock Text="v2.0.0 (Production Rich UI)" Foreground="#0F172A"/>
+                        </DockPanel>
+
+                        <DockPanel Margin="0,0,0,12">
+                            <TextBlock Text="Database Engine:" FontWeight="SemiBold" Foreground="#475569" Width="150"/>
+                            <TextBlock Text="Microsoft SQL Server LocalDB" Foreground="#0F172A"/>
+                        </DockPanel>
+
+                        <DockPanel Margin="0,0,0,12">
+                            <TextBlock Text="Pengembang:" FontWeight="SemiBold" Foreground="#475569" Width="150"/>
+                            <TextBlock Text="Afsal Murtaza" Foreground="#00529B" FontWeight="Bold"/>
+                        </DockPanel>
+
+                        <DockPanel Margin="0,0,0,18">
+                            <TextBlock Text="NRP / Departemen:" FontWeight="SemiBold" Foreground="#475569" Width="150"/>
+                            <TextBlock Text="5025241190 - Teknik Informatika" Foreground="#0F172A"/>
+                        </DockPanel>
+
+                        <Separator Background="#E2E8F0" Margin="0,0,0,15"/>
+                        <TextBlock Text="Status Sistem: Terhubung ke Database dengan Aman ✓" FontSize="12" FontWeight="SemiBold" Foreground="#059669"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>

@@ -1,0 +1,55 @@
+<Page x:Class="EventKu.CategoryPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="CategoryPage" Background="#F8FAFC">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid Margin="35,25,35,35">
+            <StackPanel>
+                <TextBlock Text="🏷️ Kategori &amp; Filter Agenda Kampus" FontSize="24" FontWeight="Bold" Foreground="#0F172A" Margin="0,0,0,5"/>
+                <TextBlock Text="Pilih kartu kategori di bawah ini untuk menampilkan daftar agenda terkait secara instan dari database." FontSize="13" Foreground="#64748B" Margin="0,0,0,25"/>
+
+                <WrapPanel>
+                    <!-- Kategori 1 -->
+                    <Border Background="White" CornerRadius="12" Padding="25" Width="350" Margin="0,0,20,20" Cursor="Hand" MouseLeftButtonDown="Category_Click" Tag="Seminar">
+                        <Border.Effect><DropShadowEffect BlurRadius="12" Direction="270" ShadowDepth="1" Color="#E2E8F0" Opacity="0.5"/></Border.Effect>
+                        <StackPanel>
+                            <TextBlock Text="🎓 Seminar Akademik" FontSize="17" FontWeight="Bold" Foreground="#00529B" Margin="0,0,0,8"/>
+                            <TextBlock Text="Kuliah tamu, seminar nasional, dan simposium ilmiah mahasiswa." Foreground="#475569" TextWrapping="Wrap" Margin="0,0,0,15"/>
+                            <TextBlock Text="👉 Klik untuk melihat data event" FontSize="12" FontWeight="Bold" Foreground="#0284C7"/>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Kategori 2 -->
+                    <Border Background="White" CornerRadius="12" Padding="25" Width="350" Margin="0,0,20,20" Cursor="Hand" MouseLeftButtonDown="Category_Click" Tag="Workshop">
+                        <Border.Effect><DropShadowEffect BlurRadius="12" Direction="270" ShadowDepth="1" Color="#E2E8F0" Opacity="0.5"/></Border.Effect>
+                        <StackPanel>
+                            <TextBlock Text="💻 Workshop &amp; Pelatihan" FontSize="17" FontWeight="Bold" Foreground="#00529B" Margin="0,0,0,8"/>
+                            <TextBlock Text="Pelatihan teknis pemrograman, desain, dan peningkatan hard skills." Foreground="#475569" TextWrapping="Wrap" Margin="0,0,0,15"/>
+                            <TextBlock Text="👉 Klik untuk melihat data event" FontSize="12" FontWeight="Bold" Foreground="#0284C7"/>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Kategori 3 -->
+                    <Border Background="White" CornerRadius="12" Padding="25" Width="350" Margin="0,0,20,20" Cursor="Hand" MouseLeftButtonDown="Category_Click" Tag="Lomba / Kompetisi">
+                        <Border.Effect><DropShadowEffect BlurRadius="12" Direction="270" ShadowDepth="1" Color="#E2E8F0" Opacity="0.5"/></Border.Effect>
+                        <StackPanel>
+                            <TextBlock Text="🏆 Lomba / Kompetisi IT" FontSize="17" FontWeight="Bold" Foreground="#00529B" Margin="0,0,0,8"/>
+                            <TextBlock Text="Kompetisi hackathon, UI/UX design competition, dan lomba programming." Foreground="#475569" TextWrapping="Wrap" Margin="0,0,0,15"/>
+                            <TextBlock Text="👉 Klik untuk melihat data event" FontSize="12" FontWeight="Bold" Foreground="#0284C7"/>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Kategori 4 -->
+                    <Border Background="White" CornerRadius="12" Padding="25" Width="350" Margin="0,0,20,20" Cursor="Hand" MouseLeftButtonDown="Category_Click" Tag="Organisasi">
+                        <Border.Effect><DropShadowEffect BlurRadius="12" Direction="270" ShadowDepth="1" Color="#E2E8F0" Opacity="0.5"/></Border.Effect>
+                        <StackPanel>
+                            <TextBlock Text="🤝 Kegiatan Organisasi / BEM" FontSize="17" FontWeight="Bold" Foreground="#00529B" Margin="0,0,0,8"/>
+                            <TextBlock Text="Rapat pleno, open recruitment, makrab, dan kegiatan internal kampus." Foreground="#475569" TextWrapping="Wrap" Margin="0,0,0,15"/>
+                            <TextBlock Text="👉 Klik untuk melihat data event" FontSize="12" FontWeight="Bold" Foreground="#0284C7"/>
+                        </StackPanel>
+                    </Border>
+                </WrapPanel>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>

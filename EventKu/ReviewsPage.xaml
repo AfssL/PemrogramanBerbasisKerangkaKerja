@@ -1,0 +1,37 @@
+<Page x:Class="EventKu.ReviewsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="ReviewsPage" Background="#F8FAFC">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid Margin="35,25,35,35">
+            <StackPanel>
+                <TextBlock Text="💬 Ulasan &amp; Evaluasi Kegiatan" FontSize="24" FontWeight="Bold" Foreground="#0F172A" Margin="0,0,0,5"/>
+                <TextBlock Text="Daftar ulasan, catatan peserta, dan evaluasi pelaksanaan agenda kampus secara transparan." FontSize="13" Foreground="#64748B" Margin="0,0,0,25"/>
+
+                <StackPanel>
+                    <Border Background="White" CornerRadius="12" Padding="22" Margin="0,0,0,15">
+                        <Border.Effect><DropShadowEffect BlurRadius="12" Direction="270" ShadowDepth="1" Color="#E2E8F0" Opacity="0.5"/></Border.Effect>
+                        <StackPanel>
+                            <DockPanel>
+                                <TextBlock Text="⭐️ MabaCup 2026" FontWeight="Bold" FontSize="16" Foreground="#0F172A"/>
+                                <TextBlock Text="Rating: 4.8 / 5.0" HorizontalAlignment="Right" Foreground="#059669" FontWeight="Bold" FontSize="14"/>
+                            </DockPanel>
+                            <TextBlock Text="Ulasan: Acara berlangsung sangat meriah dan antusiasme mahasiswa baru sangat tinggi di lapangan ITS." Foreground="#475569" Margin="0,8,0,0" FontSize="13"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Background="White" CornerRadius="12" Padding="22" Margin="0,0,0,15">
+                        <Border.Effect><DropShadowEffect BlurRadius="12" Direction="270" ShadowDepth="1" Color="#E2E8F0" Opacity="0.5"/></Border.Effect>
+                        <StackPanel>
+                            <DockPanel>
+                                <TextBlock Text="⭐️ Seminar Technology 5.0" FontWeight="Bold" FontSize="16" Foreground="#0F172A"/>
+                                <TextBlock Text="Rating: 5.0 / 5.0" HorizontalAlignment="Right" Foreground="#059669" FontWeight="Bold" FontSize="14"/>
+                            </DockPanel>
+                            <TextBlock Text="Ulasan: Pembicara sangat interaktif dan materi mengenai AI sangat relevan untuk mahasiswa teknik." Foreground="#475569" Margin="0,8,0,0" FontSize="13"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>
